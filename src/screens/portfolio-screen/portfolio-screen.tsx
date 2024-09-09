@@ -20,7 +20,7 @@ export const PortfolioScreen = ({
           Portfolio
         </h1>
 
-        <div className="flex flex-col justify-center lg:gap-28 items-center lg:flex-row mt-10">
+        <div className="flex flex-col justify-center lg:gap-28 lg:items-start items-center lg:flex-row mt-10">
           <PortfolioItem
             alt="portfolio-two"
             src={portfolioTwo}
