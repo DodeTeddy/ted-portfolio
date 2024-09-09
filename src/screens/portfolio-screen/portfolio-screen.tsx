@@ -36,11 +36,7 @@ export const PortfolioScreen = ({
               alt="portfolio-one"
               src={portfolioOne}
               portfolioName="Arcturus App"
-              portfolioDescription="Pendispros App is an application for registering people with
-              disabilities and prosthetic workshops specifically for the provinces
-              of Bali and East Java. I created this application for my final
-              assignment, and this application made me get an award as the best
-              final assignment."
+              portfolioDescription="Arcturus App is an application designed to help travel agents gain access to dynamic hotel rates and other special offers provided by travel service providers."
             />
           </div>
         </div>
