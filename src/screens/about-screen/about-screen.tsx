@@ -15,7 +15,16 @@ export const AboutScreen = ({ setSelectedSection }: AboutScreenProps) => {
       >
         <div className="flex flex-col lg:flex-row justify-center">
           {/* LEFT SECTION */}
-          <div className="flex w-full justify-center lg:mb-5 md:text-start text-center md:px-0 px-5">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="flex w-full justify-center lg:mb-5 md:text-start text-center md:px-0 px-5"
+          >
             <div>
               <div className="md:text-8xl text-6xl">
                 <h1>My Name</h1>
@@ -37,21 +46,31 @@ export const AboutScreen = ({ setSelectedSection }: AboutScreenProps) => {
                 <StackItem stack="TypeScript" />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* RIGHT SECTION */}
-          <div className="relative flex justify-center w-full">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: 100 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="relative flex justify-center w-full"
+          >
             <div className="relative md:w-[350px] sm:w-[350px] w-[300px]">
               <img
                 className="rounded-tl-3xl rounded-br-3xl"
                 src={dodePicture}
                 alt="dodePicture"
               />
+
               <button className="absolute lg:top-[25%] top-5 right-5 bg-black text-white lg:py-5 py-1 lg:px-10 px-5 rounded-full hover:bg-gray hover:text-black">
                 Hire Me
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>

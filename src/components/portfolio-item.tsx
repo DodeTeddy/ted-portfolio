@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type PortfolioItemProps = {
   alt: string;
   src: string;
@@ -11,7 +13,16 @@ export const PortfolioItem = ({
   portfolioDescription,
 }: PortfolioItemProps) => {
   return (
-    <div className="flex flex-col min-[1480px]:flex-row gap-5">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8 }}
+      variants={{
+        hidden: { opacity: 0, scale: 0 },
+        visible: { opacity: 1, scale: 1 },
+      }}
+      className="flex flex-col min-[1480px]:flex-row gap-5"
+    >
       <div className="bg-white drop-shadow-xl md:p-16 p-10 rounded-3xl md:w-[500px] lg:w-[300px] w-[270px]">
         <img alt={alt} src={src} />
       </div>
@@ -23,6 +34,6 @@ export const PortfolioItem = ({
           {portfolioDescription}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };

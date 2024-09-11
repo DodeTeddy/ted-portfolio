@@ -16,9 +16,18 @@ export const PortfolioScreen = ({
       <motion.div
         onViewportEnter={() => setSelectedSection(SectionEnum.PORTOFOLIO)}
       >
-        <h1 className="font-pirataone text-6xl underline text-center">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+          variants={{
+            hidden: { opacity: 0, scale: 0 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+          className="font-pirataone text-6xl underline text-center"
+        >
           Portfolio
-        </h1>
+        </motion.h1>
 
         <div className="flex flex-col justify-center lg:gap-28 lg:items-start items-center lg:flex-row mt-10">
           <PortfolioItem
