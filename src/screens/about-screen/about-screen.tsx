@@ -67,7 +67,7 @@ export const AboutScreen = ({ setSelectedSection }: AboutScreenProps) => {
               />
 
               <button className="absolute lg:top-[25%] top-5 right-5 bg-black text-white lg:py-5 py-1 lg:px-10 px-5 rounded-full hover:bg-gray hover:text-black">
-                Hire Me
+                <a href="mailto:dodeteddy11@gmail.com">Hire Me</a>
               </button>
             </div>
           </motion.div>

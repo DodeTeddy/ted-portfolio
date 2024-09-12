@@ -54,7 +54,7 @@ export const Navbar = ({
           {isAboveSmallScreen && (
             <div className="flex justify-end lg:w-[300px] w-[105px]">
               <button className="rounded-full bg-gray py-2 px-5 hover:bg-black hover:text-white text-xs">
-                Contact Me
+                <a href="mailto:dodeteddy11@gmail.com">Contact Me</a>
               </button>
             </div>
           )}
