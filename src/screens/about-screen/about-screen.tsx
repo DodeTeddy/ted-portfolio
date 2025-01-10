@@ -39,11 +39,11 @@ export const AboutScreen = ({ setSelectedSection }: AboutScreenProps) => {
                 </p>
               </div>
               <div className="flex gap-3 md:w-[400px] w-full justify-center md:justify-start overflow-auto flex-wrap lg:mt-16 py-5 lg:py-0">
-                <StackItem stack="Flutter" />
-                <StackItem stack="Dart" />
-                <StackItem stack="React" />
                 <StackItem stack="Javascript" />
                 <StackItem stack="TypeScript" />
+                <StackItem stack="React" />
+                <StackItem stack="Node JS" />
+                <StackItem stack="MySQL" />
               </div>
             </div>
           </motion.div>

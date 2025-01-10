@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="flex justify-center gap-16 mb-10">
         <FooterItem
           alt="github"
-          href="https://github.com/DodeTeddy"
+          href="https://github.com/dodeteddydev"
           src={githubLogo}
           title="Github"
         />
